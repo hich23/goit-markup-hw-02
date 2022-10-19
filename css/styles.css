@@ -1,1 +1,50 @@
 /* оформление index.html*/
+body {
+    background-color: #F5F5F5;
+    color: #757575;
+}
+
+/* header */
+
+.logo {
+    color: #000000;
+}
+
+.logo-part {
+    color: #2196F3;
+}
+
+.site-nav .link {
+    color: #212121;
+}
+
+.link:hover {
+    color: #2196F3;
+}
+
+.link {
+    color: inherit;
+}
+
+.hero {
+    background-color: #2F303A;
+}
+
+.hero-title {
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+ul {
+    list-style: none;
+}
+
+
