@@ -1,31 +1,64 @@
-/* оформление index.html*/
+/* палітра */
+:root {
+    --main-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-bg-color: #FFFFFF;
+    --secondary-bg-color: #EEEEEE;
+    --footer-bg-color: #2F303A;
+    --button-bg-color: #F5F4FA;
+    --logo-color-header: #000000;
+}
+
+/* оформлення базове*/
 body {
-    background-color: #F5F5F5;
-    color: #757575;
+    background-color: var(--primary-bg-color);
+    color: var(--main-text-color);
 }
 
-/* header */
+.title {
+    color: var(--title-text-color)
+}
 
+/* оформлення header */
 .logo {
-    color: #000000;
+    color: var(--accent-color);
+    text-decoration: none;
+    border: none;
 }
 
-.logo-part {
-    color: #2196F3;
+.logo-footer {
+    color: var(--primary-bg-color)
+}
+
+.logo-header {
+    color: var(--logo-color-header)
 }
 
 .site-nav .link {
-    color: #212121;
+    color: var(--title-text-color)
 }
 
-.link:hover {
-    color: #2196F3;
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
 }
 
 .link {
-    color: inherit;
+    color:#757575;
+    text-decoration: none;
 }
 
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--accent-color);
+}
+
+/* оформлення секцій */
 .hero {
     background-color: #2F303A;
 }
@@ -34,17 +67,65 @@ body {
     color: #FFFFFF;
 }
 
+.team {
+    background-color: var(--button-bg-color);
+}
 
+/* оформлення Button */
 
+.button {
+    color: var(--title-text-color);
+    background-color: var(--button-bg-color);
+    border-color: transparent;
+    cursor: pointer;
+}
 
+.button:hover, .button:focus,
+.button.current
+ {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+}
 
-
-
-
-
+.button.primary {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+}
 
 ul {
     list-style: none;
 }
 
 
+/* оформлення прихованих заголовків */
+.visually-hidden {
+ position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+
+/* оформлення footer */
+.bottom {
+    background-color: var(--footer-bg-color);
+}
+
+.contacts-bottom {
+    font-style: normal;
+}
+
+.contacts-bottom .link:hover,
+.contacts-bottom .link:focus {
+    color: var(--accent-color);
+}
+
+.location {
+    color: var(--primary-bg-color);
+}
